@@ -1,0 +1,90 @@
+/* ANIMATIONS */
+
+@keyframes fade {
+    from {
+      transform: translateX(20%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+/* ACCUEIL */
+
+.profil, .parcours, .contact {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    opacity: 0;
+    transform: translateX(50%);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.profil.selected, .parcours.selected, .contact.selected {
+    opacity: 1;
+    transform: translateX(0);
+    animation: fade 700ms ease-out;
+}
+
+.profilcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 5px #00000049;
+    height: auto;
+    width: 60%;
+    font-size: 0.8vw;
+    z-index: 2;
+}
+
+.profilcontent {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+#biglogo {
+    position: absolute;
+    top: 15%;
+    left: 2%;
+    width: 25%;
+    z-index: -1;
+}
+
+/* WEB */
+
+.outils, .projets {
+    display: flex;
+    position: absolute;
+    opacity: 0;
+    transform: translateX(50%);
+}
+
+.outils.selected, .projets.selected {
+    opacity: 1;
+    transform: translateX(0);
+    animation: fade 500ms ease-in-out;
+}
+
+/* DESIGN */
+
+.photoshop, .illustrator, .ae, .indesign, .xd {
+    display: flex;
+    position: absolute;
+    opacity: 0;
+    transform: translateX(50%);
+}
+
+.photoshop.selected, .illustrator.selected, .ae.selected, .indesign.selected, .xd.selected {
+    opacity: 1;
+    transform: translateX(0);
+    animation: fade 500ms ease-in-out;
+}
+

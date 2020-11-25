@@ -1,0 +1,243 @@
+/*ANIMATIONS*/
+
+@keyframes fadeContent {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* LE BODY LOL */
+
+body {
+    background-color: #484848;
+    margin: 0;
+    overflow: auto;
+    font-family: Helvetica;
+}
+
+
+/* NAV ET COMPAGNIE */
+
+nav {
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 3px 20px;
+    z-index: 10;
+    text-transform: uppercase;
+}
+
+#logo {
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 26px;
+    width: 70px;
+    filter: hue-rotate(0deg);
+    transition: all 1s ease;
+    transition-property: margin-top, filter;
+}
+
+a, a:after, a:active, a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+/* ONGLETS ET LEUR ANIMATION */
+
+
+#menu {
+    width: 50%;
+    margin: auto;
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+}
+
+
+#menu ul, #menu li {
+    display: inline;
+}
+
+#menu a {
+    display: inline-block;
+    width: 25%;
+    padding: .75rem 0;
+    text-decoration: none;
+    color: lightgray;
+    transition: color .15s;
+}
+
+#menu a:active {
+    color: white;
+}
+
+#menu a:hover {
+    color: white;
+}
+
+#home.active ~ hr {
+    margin-left: 14.5%
+}
+
+#web.active ~ hr {
+    margin-left: 40.3%
+}
+
+#design.active ~ hr {
+    margin-left: 65.5%
+}
+
+#slider {
+    height: .25rem;
+    width: 20%;
+    margin: 0;
+    background: cyan;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+
+/* LA JOLIE LIGNE BLANCHE SUR LE COTE */
+
+span {
+    position: absolute;
+    top: 0;
+    left: 60px;
+    display: block;
+    width: 2px;
+    height: 100%;
+    background: rgba(250, 250, 250, .3);
+    z-index: 8;
+}
+
+
+/* CONTENU SOUS LA NAV */
+
+#main {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin: auto;
+    overflow: hidden;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    animation: fadeContent 500ms ease-out;
+}
+
+#box {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#box > #sidemenu {
+    width: 250px;
+    position: absolute;
+    box-sizing: border-box;
+    height: 919px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 187px;
+    list-style-position: outside;
+    list-style: none;
+    top: 0;
+    left: 0;
+    z-index: 4;
+}
+
+#box > #sidemenu li {
+    background-attachment: scroll;
+    background-clip: border-box;
+    color: white;
+    text-decoration: none;
+    word-spacing: 1px;
+    width: 370px;
+    line-height: 54px;
+    height: 54px;
+    font-family: Helvetica;
+    padding-left: 54px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#box > #sidemenu a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    width: 150px;
+}
+
+.liactive {
+    background-image: url("/images/activebar.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-clip: border-box;
+    font-size: large;
+}
+
+#sidemenu li::before {
+    content: "◆";
+    margin-right: 10px;
+}
+
+#box > #content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 80%;
+    height: 80%;
+    align-items: center;
+    z-index: 3;
+    margin-left: 250px;
+}
+
+#content p {
+    font-size: 1.5em;
+    color: white;
+}
+
+
+
+/*POUR PLUS TARD SI JAMAIS
+
+#box > #bottomnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(255,255,255,0.4) 100%);
+    z-index: 11;
+}
+
+
+#box > #bottomnav > #bottomnavcontent {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 70%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 11;
+}*/
