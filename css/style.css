@@ -194,6 +194,7 @@ span {
 
 #sidemenu li::before {
     content: "◆";
+    font-size: initial;
     margin-right: 10px;
 }
 
