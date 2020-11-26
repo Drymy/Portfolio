@@ -52,18 +52,17 @@
 
 #biglogo {
     position: absolute;
-    top: 15%;
-    left: 2%;
+    left: 20px;
     width: 25%;
-    z-index: -1;
+    z-index: 3;
 }
 
 #bigadrar {
     position: absolute;
-    top: 25%;
-    left: 8%;
-    width: 18%;
-    z-index: -1;
+    left: 70px;
+    top: 170px;
+    width: 20%;
+    z-index: 3;
     background-color: white;
 }
 
@@ -95,7 +94,7 @@
 .outils.selected, .projets.selected {
     opacity: 1;
     transform: translateX(0);
-    animation: fade 500ms ease-in-out;
+    animation: fade 700ms ease-in-out;
 }
 
 .webcontainer {
