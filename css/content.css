@@ -11,7 +11,7 @@
     }
   }
 
-/* ACCUEIL */
+/* HOME */
 
 .profil, .parcours, .contact {
     display: flex;
@@ -31,7 +31,7 @@
     animation: fade 700ms ease-out;
 }
 
-.profilcontainer {
+.homecontainer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,7 +44,7 @@
     z-index: 2;
 }
 
-.profilcontent {
+.homecontent {
     display: flex;
     flex-direction: column;
     width: 70%;
@@ -58,13 +58,38 @@
     z-index: -1;
 }
 
+#bigadrar {
+    position: absolute;
+    top: 25%;
+    left: 8%;
+    width: 18%;
+    z-index: -1;
+    background-color: white;
+}
+
+.contact li, ul {
+    text-decoration: none;
+    color: white;
+    font-size: 1vw;
+    margin: 0;
+    margin-left: 20px;
+    padding: 0;
+    line-height: 8px;
+}
+
+
 /* WEB */
 
 .outils, .projets {
     display: flex;
+    flex-direction: column;
     position: absolute;
     opacity: 0;
     transform: translateX(50%);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
 .outils.selected, .projets.selected {
@@ -72,6 +97,40 @@
     transform: translateX(0);
     animation: fade 500ms ease-in-out;
 }
+
+.webcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 5px #00000049;
+    height: auto;
+    width: 60%;
+    font-size: 0.8vw;
+    z-index: 2;
+}
+
+.webcontent {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+/* FONT AWESOME ICONS */
+
+.webicons {
+    height: auto;
+    width: 40%;
+}
+.webtools {
+    height: auto;
+    width: 60%;
+}
+
+
+
+
 
 /* DESIGN */
 
