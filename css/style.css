@@ -185,7 +185,7 @@ span {
 }
 
 .liactive {
-    background-image: url("/images/activebar.png");
+    background-image: url("../images/activebar.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-clip: border-box;
