@@ -185,11 +185,11 @@ span {
 }
 
 .liactive {
-    background-image: url("../images/activebar.png");
+    background-image: url("images/activebar.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-clip: border-box;
-    font-size: large;
+    font-size: larger;
 }
 
 #sidemenu li::before {
