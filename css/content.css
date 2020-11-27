@@ -31,6 +31,13 @@
     animation: fade 700ms ease-out;
 }
 
+.profil a {
+    display: inline-block !important;
+    width: auto;
+    height: auto;
+    color: wheat;
+}
+
 .homecontainer {
     display: flex;
     flex-direction: column;
@@ -60,7 +67,6 @@
 #bigadrar {
     position: absolute;
     left: 70px;
-    top: 170px;
     width: 20%;
     z-index: 3;
     background-color: white;
@@ -97,6 +103,17 @@
     animation: fade 700ms ease-in-out;
 }
 
+.projets.selected p {
+    text-align: justify;
+}
+
+.projets a {
+    display: inline-block !important;
+    width: auto;
+    height: auto;
+    color: wheat;
+}
+
 .webcontainer {
     display: flex;
     flex-direction: column;
@@ -110,10 +127,18 @@
     z-index: 2;
 }
 
+.webcontainer a {
+    display: flex;
+}
+
 .webcontent {
     display: flex;
     flex-direction: column;
     width: 70%;
+}
+
+.webcontent i {
+    font-size: 0.8vw;
 }
 
 /* FONT AWESOME ICONS */
@@ -128,21 +153,175 @@
 }
 
 
-
-
+.troupe {
+    height: auto;
+    margin: auto;
+    padding-top: 4%;
+    padding-left: 4%;
+    padding-right: 4%;
+    width: 92%;
+}
 
 /* DESIGN */
 
-.photoshop, .illustrator, .ae, .indesign, .xd {
+.photoshop, .illustrator, .indesign, .xd {
     display: flex;
+    flex-direction: column;
     position: absolute;
     opacity: 0;
     transform: translateX(50%);
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
 }
 
 .photoshop.selected, .illustrator.selected, .ae.selected, .indesign.selected, .xd.selected {
     opacity: 1;
     transform: translateX(0);
-    animation: fade 500ms ease-in-out;
+    animation: fade 700ms ease-in-out;
 }
 
+.photoshop a, .illustrator a, .ae a, .indesign a, .xd a {
+    display: inline-block !important;
+    width: auto;
+    height: auto;
+    color: wheat;
+}
+
+.designcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 5px #00000049;
+    height: auto;
+    width: 40%;
+    font-size: 0.8vw;
+    z-index: 2;
+}
+
+.designcontent {
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+    width: 80%;
+}
+
+.imagecontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.photoshop.selected a {
+    display: flex;
+}
+
+/* PHOTOSHOP */
+
+.photoshopimage {
+    display: flex;
+    justify-self: flex-start;
+    justify-self: flex-start;
+    width: 60%;
+    border: 1px black solid;
+    box-shadow: 1px 6px 5px 0px rgba(0, 0, 0, 0.45);
+}
+
+.photoshopimage2 {
+    display: flex;
+    justify-self: flex-end;
+    align-self: flex-end;
+    margin-left: auto;
+    width: 60%;
+    border: 1px black solid;
+    box-shadow: 1px 6px 5px 0px rgba(0, 0, 0, 0.45);
+}
+
+/* ILLUSTRATOR */
+
+.illustratorimage {
+    display: flex;
+    margin: auto;
+    width: 60%;
+    border: 1px black solid;
+    box-shadow: 1px 6px 5px 0px rgba(0, 0, 0, 0.45);
+}
+
+.illustratorimage2 {
+    display: flex;
+    margin: auto;
+    width: 60%;
+    border: 1px black solid;
+    box-shadow: 1px 6px 5px 0px rgba(0, 0, 0, 0.45);
+}
+
+/* AFTER EFFECT */
+
+.ae {
+    display: flex;
+    top: 20%;
+    flex-direction: column;
+    position: absolute;
+    opacity: 0;
+    transform: translateX(50%);
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    height: 50%;
+}
+
+.imagecontainer2 {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+
+.aeimage {
+    display: flex;
+    margin: auto;
+    width: 25%;
+    border: 1px black solid;
+    box-shadow: 1px 6px 5px 0px rgba(0, 0, 0, 0.45);
+}
+
+/* INDESIGN */
+
+.indesignimage {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    border: 1px black solid;
+    box-shadow: 1px 6px 5px 0px rgba(0, 0, 0, 0.45);
+}
+
+.designcontainer2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 5px #00000049;
+    height: auto;
+    width: 30%;
+    font-size: 0.8vw;
+    z-index: 2;
+}
+
+
+/* XD */
+
+.xdimage {
+    display: flex;
+    margin: auto;
+    width: 20%;
+    border: 1px black solid;
+    box-shadow: 1px 6px 5px 0px rgba(0, 0, 0, 0.45);
+}
+
+.xd p {
+    text-align: center !important;
+}
