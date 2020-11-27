@@ -1,0 +1,112 @@
+/* Smartphones (portrait) ----------- */
+@media screen and (max-width : 600px) {
+
+    nav {
+        height: 80px;
+    }
+
+    #menu {
+        width: 80%;
+    }
+
+    #menu a {
+        padding-top: 23px;
+        font-size: 3em;
+    }
+
+    #logo {
+        margin-top: 30px;
+        width: 13%;
+    }
+    
+    span {
+        display: none;
+    }
+
+    #box > #sidemenu {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        bottom: 0;
+        top: 85%;
+        height: auto;
+        width: 100%;
+        padding-top: 30px;
+        background: rgb(0,0,0);
+        background: linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(255,255,255,0.4) 100%);
+  
+    }
+
+    #sidemenu li {
+        display: inline;
+        width: auto;
+        font-size: 4em;
+        padding-left: 0 !important;
+        line-height: 0px;
+    }
+
+    #sidemenu li::before {
+        content: "";
+        margin-right: 0 !important;
+    }
+
+    .liactive {
+        background-image: none;
+    }
+
+    #profil {
+        background-image: url("../images/svg/profil.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        white-space: nowrap;
+        font-size: 0 !important;
+        overflow: hidden;
+    }
+
+    #parcours {
+        background-image: url("../images/svg/parcours.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        white-space: nowrap;
+        font-size: 0 !important;
+        overflow: hidden;
+    }
+
+    #contact {
+        background-image: url("../images/svg/contact.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        white-space: nowrap;
+        font-size: 0 !important;
+        overflow: hidden;
+    }
+
+
+
+
+
+
+
+    #content {
+        width: 100% !important;
+        margin-left: 0px !important;
+        margin: auto;
+    }
+
+    .homecontainer {
+        margin-bottom: 30%;
+        width: 80%;
+        height: auto;
+        font-size: 0.7em;
+    }
+
+    #biglogo {
+        left: 70%;
+        bottom: 100px;
+        width: 20%;
+    }
+
+
+}
+    
