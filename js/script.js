@@ -103,8 +103,8 @@ function sidebarNavigation() {
               "click",
               function (ev) {
                 const currentab = document.querySelector(".liactive");
-                currentab.classList.remove("liactive")
-                ev.target.classList.add("liactive")
+                currentab.classList.remove("liactive");
+                ev.target.classList.add("liactive");
                 showContent(tab.id);
               }
           )

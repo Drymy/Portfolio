@@ -1,5 +1,9 @@
 /* Smartphones (portrait) ----------- */
-@media screen and (max-width : 600px) {
+@media screen and (max-width : 480px) {
+
+    body {
+        -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
+    }
 
     nav {
         height: 80px;
@@ -11,11 +15,12 @@
 
     #menu a {
         padding-top: 23px;
-        font-size: 3em;
+        font-size: 4em;
     }
 
     #logo {
-        margin-top: 30px;
+        margin-top: 8px;
+        margin-left: 10px;
         width: 13%;
     }
     
@@ -32,7 +37,7 @@
         top: 85%;
         height: auto;
         width: 100%;
-        padding-top: 30px;
+        padding-top: 25px;
         background: rgb(0,0,0);
         background: linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(255,255,255,0.4) 100%);
   
@@ -53,40 +58,49 @@
 
     .liactive {
         background-image: none;
+        background-color: white !important;
     }
 
+/* HOME */
+
     #profil {
-        background-image: url("../images/svg/profil.svg");
-        background-repeat: no-repeat;
-        background-position: center;
+        background-color: black;
+        -webkit-mask-image: url("../images/svg/profil.svg");
+        mask-image: url("../images/svg/profil.svg");
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        mask-position: center;
         white-space: nowrap;
         font-size: 0 !important;
         overflow: hidden;
     }
 
     #parcours {
-        background-image: url("../images/svg/parcours.svg");
-        background-repeat: no-repeat;
-        background-position: center;
+        background-color: black;
+        -webkit-mask-image: url("../images/svg/parcours.svg");
+        mask-image: url("../images/svg/parcours.svg");
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        mask-position: center;
         white-space: nowrap;
         font-size: 0 !important;
         overflow: hidden;
     }
 
     #contact {
-        background-image: url("../images/svg/contact.svg");
-        background-repeat: no-repeat;
-        background-position: center;
+        background-color: black;
+        -webkit-mask-image: url("../images/svg/contact.svg");
+        mask-image: url("../images/svg/contact.svg");
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        mask-position: center;
         white-space: nowrap;
         font-size: 0 !important;
         overflow: hidden;
     }
-
-
-
-
-
-
 
     #content {
         width: 100% !important;
@@ -95,18 +109,249 @@
     }
 
     .homecontainer {
-        margin-bottom: 30%;
+        margin-bottom: 10%;
         width: 80%;
-        height: auto;
+        height: 80%;
         font-size: 0.7em;
+    }
+
+    .homecontent {
+        width: 90%;
+        height: 100%;
+        margin: auto;
+        animation: eas;
     }
 
     #biglogo {
         left: 70%;
+        bottom: 50px;
+        width: 20%;
+    }
+
+    #bigadrar {
+        left: 40%;
         bottom: 100px;
         width: 20%;
     }
 
+    .contact {
+        font-size: 0.9em;
+    }
+    .contact li, .contact ul {
+        text-decoration: none;
+        color: white;
+        font-size: 1.4em;
+        margin: 0;
+        margin-left: 20px;
+        padding: 0;
+        line-height: 8px;
+    }
+
+/* WEB */    
+
+    .webcontainer {
+        margin-bottom: 10%;
+        width: 80%;
+        height: 80%;
+        font-size: 0.7em;
+    }
+
+    .webcontent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 100%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .webcontent i {
+        font-size: 1em;
+    }
+
+    .webicons {
+        display: flex;
+        margin: auto;
+        width: 90%;
+    }
+    .webtools {
+        display: flex;
+        margin: auto;
+        width: 100%;
+    }
+
+    #outils {
+        background-color: black;
+        -webkit-mask-image: url("../images/svg/outils.svg");
+        mask-image: url("../images/svg/outils.svg");
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        mask-position: center;
+        white-space: nowrap;
+        font-size: 0 !important;
+        overflow: hidden;
+    }
+
+    #projets {
+        background-color: black;
+        -webkit-mask-image: url("../images/svg/projets.svg");
+        mask-image: url("../images/svg/projets.svg");
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        mask-position: center;
+        white-space: nowrap;
+        font-size: 0 !important;
+        overflow: hidden;
+    }
+
+
+/* DESIGN */
+
+    /* PHOTHOSHOP */
+
+    #photoshop {
+        background-color: black;
+        -webkit-mask-image: url("../images/svg/ps.svg");
+        mask-image: url("../images/svg/ps.svg");
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        mask-position: center;
+        white-space: nowrap;
+        font-size: 0 !important;
+        overflow: hidden;        
+    }
+
+    .photoshop {
+        width: 95%;
+        height: 80%;
+        margin-top: 10%;
+    }
+
+    .photoshopimage {
+        display: flex;
+        margin: auto;
+        width: 100%;
+        border: 1px black solid;
+        box-shadow: 1px 6px 5px 0px rgba(0, 0, 0, 0.45);
+    }
+    
+    .photoshopimage2 {
+        display: flex;
+        margin: auto;
+        width: 100%;
+        border: 1px black solid;
+        box-shadow: 1px 6px 5px 0px rgba(0, 0, 0, 0.45);
+    }
+
+    .designcontainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        width: 90%;
+        font-size: 0.5em;
+    }
+    
+    .designcontent {
+        display: flex;
+        text-align: justify;
+        flex-direction: column;
+        width: 80%;
+    }
+    
+    .imagecontainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    /* ILLUSTRATOR */
+    
+
+    #illustrator {
+        background-color: black;
+        -webkit-mask-image: url("../images/svg/ai.svg");
+        mask-image: url("../images/svg/ai.svg");
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        mask-position: center;
+        white-space: nowrap;
+        font-size: 0 !important;
+        overflow: hidden;        
+    }
+
+    .illustrator {
+        width: 95%;
+        height: 80%;
+        margin-top: 10%;
+    }
+
+    .illustratorimage {
+        display: flex;
+        margin: auto;
+        width: 55%;
+        height: auto;
+        border: 1px black solid;
+        box-shadow: 1px 6px 5px 0px rgba(0, 0, 0, 0.45);
+        z-index: 1;
+    }
+    
+    .illustratorimage2 {
+        display: flex;
+        margin: auto;
+        width: 40%;
+        border: 1px black solid;
+        box-shadow: 1px 6px 5px 0px rgba(0, 0, 0, 0.45);
+        z-index: 2;
+    }
+
+    #ae {
+        background-color: black;
+        -webkit-mask-image: url("../images/svg/ae.svg");
+        mask-image: url("../images/svg/ae.svg");
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        mask-position: center;
+        white-space: nowrap;
+        font-size: 0 !important;
+        overflow: hidden;        
+    }
+
+    #indesign {
+        background-color: black;
+        -webkit-mask-image: url("../images/svg/id.svg");
+        mask-image: url("../images/svg/id.svg");
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        mask-position: center;
+        white-space: nowrap;
+        font-size: 0 !important;
+        overflow: hidden;        
+    }
+
+    #xd {
+        background-color: black;
+        -webkit-mask-image: url("../images/svg/xd.svg");
+        mask-image: url("../images/svg/xd.svg");
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        mask-position: center;
+        white-space: nowrap;
+        font-size: 0 !important;
+        overflow: hidden;        
+    }
+
 
 }
-    
