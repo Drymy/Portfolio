@@ -3,10 +3,20 @@
 
     body {
         -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
+        height: 100vh !important;
+        width: 100vw !important;
+        overflow-y: hidden !important;
     }
 
+
     nav {
-        height: 80px;
+        height: 10vh !important;
+    }
+
+    #main {
+        position: unset;
+        background-size: cover;
+        height: 90vh !important;
     }
 
     #menu {
@@ -19,7 +29,7 @@
     }
 
     #logo {
-        margin-top: 8px;
+        margin-top: 25px;
         margin-left: 10px;
         width: 13%;
     }
@@ -28,19 +38,23 @@
         display: none;
     }
 
+    #box {
+        justify-content: unset;
+        align-items: unset;
+        height: 100% !important;
+    }
+
     #box > #sidemenu {
         display: flex;
+        position: relative !important;
         flex-direction: row;
-        align-items: flex-start;
-        justify-content: flex-start;
-        bottom: 0;
-        top: 85%;
-        height: auto;
+        align-items: flex-start !important;
+        height: 15%;
         width: 100%;
-        padding-top: 25px;
         background: rgb(0,0,0);
         background: linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(255,255,255,0.4) 100%);
-  
+        padding-top: 10px;
+        order: 2;
     }
 
     #sidemenu li {
@@ -61,7 +75,21 @@
         background-color: white !important;
     }
 
+    #content {
+        position: relative !important;
+        width: 100% !important;
+        margin: 0 !important;
+        justify-content: center;
+        align-items: center;
+        height: 90% !important;
+        order: 1;
+    }
+
 /* HOME */
+
+    .profil, .parcours, .contact {
+        margin: auto;
+    }
 
     #profil {
         background-color: black;
@@ -102,45 +130,37 @@
         overflow: hidden;
     }
 
-    #content {
-        width: 100% !important;
-        margin-left: 0px !important;
-        margin: auto;
+    .homecontainer {
+        width: 100%;
+        height: auto;
     }
 
-    .homecontainer {
-        margin-bottom: 10%;
-        width: 80%;
-        height: 80%;
-        font-size: 0.7em;
+    .container {
+        display: flex;
+        width: 600px;
+        background-color: khaki;
     }
 
     .homecontent {
         width: 90%;
         height: 100%;
         margin: auto;
-        animation: eas;
+        overflow-y: scroll;
+        font-size: 0.7em;
     }
 
     #biglogo {
-        left: 70%;
-        bottom: 50px;
-        width: 20%;
+        display: none;
     }
 
     #bigadrar {
-        left: 40%;
-        bottom: 100px;
-        width: 20%;
+        display: none;
     }
 
-    .contact {
-        font-size: 0.9em;
-    }
     .contact li, .contact ul {
         text-decoration: none;
         color: white;
-        font-size: 1.4em;
+        font-size: 1.2em;
         margin: 0;
         margin-left: 20px;
         padding: 0;
@@ -149,10 +169,16 @@
 
 /* WEB */    
 
-    .webcontainer {
+    .outilscontainer {
         margin-bottom: 10%;
-        width: 80%;
-        height: 80%;
+        width: 100%;
+        height: auto;
+        font-size: 0.7em;
+    }
+
+    .projetscontainer {
+        width: 100%;
+        height: auto;
         font-size: 0.7em;
     }
 
@@ -162,9 +188,13 @@
         justify-content: center;
         align-items: center;
         width: 90%;
-        height: 100%;
+        height: auto;
         margin: auto;
         text-align: center;
+    }
+
+    .troupe {
+        width: 100% !important;
     }
 
     .webcontent i {

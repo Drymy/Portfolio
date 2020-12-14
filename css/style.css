@@ -9,16 +9,15 @@
     }
 }
 
-/* LE BODY LOL */
+/* LE BODY */
 
 body {
-    background-color: #484848;
+    background-color: #484848 !important;
     width: 100%;
     height: 100%;
     margin: 0;
-    overflow: auto;
+    overflow: hidden;
     font-family: Helvetica;
-    position: absolute;
 }
 
 
@@ -26,10 +25,10 @@ body {
 
 nav {
     display: flex;
-    position: fixed;
+    position: relative;
     flex-direction: row;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.7) !important;
     box-shadow: 0px 3px 20px;
     z-index: 10;
     text-transform: uppercase;

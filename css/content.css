@@ -18,11 +18,22 @@
     flex-direction: column;
     position: absolute;
     opacity: 0;
-    transform: translateX(50%);
+    transform: translateX(300%);
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100%;
+}
+
+.profil {
+    z-index: 3;
+}
+
+.parcours {
+    z-index: 2;
+}
+
+.contact {
     z-index: 1;
 }
 
@@ -34,7 +45,9 @@
 
 .profil a {
     color: wheat;
-    z-index: 99999999;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
 
 .homecontainer {
@@ -46,7 +59,8 @@
     box-shadow: inset 0 0 5px #00000049;
     height: auto;
     width: 60%;
-    font-size: 0.8vw;
+    padding-top: 20px;
+    font-size: 1em;
     z-index: 2;
 }
 
@@ -90,7 +104,7 @@
     flex-direction: column;
     position: absolute;
     opacity: 0;
-    transform: translateX(50%);
+    transform: translateX(300%);
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -114,7 +128,7 @@
     color: wheat;
 }
 
-.webcontainer {
+.outilscontainer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -127,9 +141,19 @@
     z-index: 2;
 }
 
-.webcontainer a {
+.projetscontainer {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 5px #00000049;
+    height: auto;
+    width: 80%;
+    font-size: 0.8vw;
+    z-index: 2;
 }
+
 
 .webcontent {
     display: flex;
@@ -164,31 +188,6 @@
 
 /* DESIGN */
 
-.photoshop, .indesign, .xd {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    opacity: 0;
-    transform: translateX(50%);
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    height: 100%;
-}
-
-.photoshop.selected, .illustrator.selected, .ae.selected, .indesign.selected, .xd.selected {
-    opacity: 1;
-    transform: translateX(0);
-    animation: fade 700ms ease-in-out;
-}
-
-.photoshop a, .illustrator a, .ae a, .indesign a, .xd a {
-    display: inline-block !important;
-    width: auto;
-    height: auto;
-    color: wheat;
-}
-
 .designcontainer {
     display: flex;
     flex-direction: column;
@@ -197,7 +196,7 @@
     background-color: rgba(0, 0, 0, 0.3);
     box-shadow: inset 0 0 5px #00000049;
     height: auto;
-    width: 40%;
+    width: 70%;
     font-size: 0.8vw;
     z-index: 2;
 }
@@ -206,7 +205,81 @@
     display: flex;
     text-align: justify;
     flex-direction: column;
-    width: 80%;
+    width: 90%;
+}
+
+.photoshop.selected, .illustrator.selected, .ae.selected, .indesign.selected, .xd.selected {
+    opacity: 1;
+    transform: translateX(0);
+    animation: fade 700ms ease-in-out;
+}
+
+/* PHOTOSHOP */
+
+.photoshop {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    opacity: 0;
+    transform: translateX(300%);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-top: -20px;
+    z-index: 6;
+}
+
+.photoshop p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.photoshopcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 5px #00000049;
+    height: auto;
+    width: 65%;
+    font-size: 0.8vw;
+}
+
+.photoshopcontainer a {
+    display: inline-block !important;
+    width: auto;
+    margin: auto;
+    text-decoration: none;
+    color: wheat;
+}
+
+
+.carousel {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid white;
+    width: 90%;
+}
+
+.carousel-control-prev span {
+    top: unset;
+}
+
+.carousel-control-prev-icon {
+    width: 35px !important;
+    height: 35px !important;
+}
+  
+.carousel-control-next span {
+    top: unset;
+}
+
+.carousel-control-next-icon {
+    width: 35px !important;
+    height: 35px !important;
 }
 
 .imagecontainer {
@@ -219,8 +292,6 @@
 .photoshop.selected a {
     display: flex;
 }
-
-/* PHOTOSHOP */
 
 .photoshopimage {
     display: flex;
@@ -248,28 +319,51 @@
     flex-direction: column;
     position: absolute;
     opacity: 0;
-    transform: translateX(50%);
+    transform: translateX(300%);
     align-items: center;
     justify-content: space-between;
     width: 100%;
     height: 100%;
+    margin-top: -50px;
+    z-index: 5;
+}
+
+.illustrator p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.illustratorcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 5px #00000049;
+    height: auto;
+    width: 55%;
+    font-size: 0.8vw;
+}
+
+.illustratorcontainer a {
+    display: inline-block !important;
+    width: auto;
+    margin: auto;
+    text-decoration: none;
+    color: wheat;
 }
 
 .illustratorimage {
     display: flex;
     margin: auto;
-    width: 40%;
+    width: 50%;
     height: auto;
-    border: 1px black solid;
-    box-shadow: 1px 6px 5px 0px rgba(0, 0, 0, 0.45);
 }
 
 .illustratorimage2 {
     display: flex;
     margin: auto;
-    width: 22%;
-    border: 1px black solid;
-    box-shadow: 1px 6px 5px 0px rgba(0, 0, 0, 0.45);
+    width: 30%;
 }
 
 /* AFTER EFFECT */
@@ -280,38 +374,20 @@
     flex-direction: column;
     position: absolute;
     opacity: 0;
-    transform: translateX(50%);
+    transform: translateX(300%);
     align-items: center;
     justify-content: space-around;
     width: 70%;
     height: 50%;
+    z-index: 4;
 }
 
-.imagecontainer2 {
-    display: flex;
-    flex-direction: row;
-    width: 50%;
+.ae p {
+    text-align: center;
+    margin-top: 10px;
 }
 
-.aeimage {
-    display: flex;
-    margin: auto;
-    width: 25%;
-    border: 1px black solid;
-    box-shadow: 1px 6px 5px 0px rgba(0, 0, 0, 0.45);
-}
-
-/* INDESIGN */
-
-.indesignimage {
-    display: flex;
-    margin: auto;
-    width: 60%;
-    border: 1px black solid;
-    box-shadow: 1px 6px 5px 0px rgba(0, 0, 0, 0.45);
-}
-
-.designcontainer2 {
+.aecontainer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -319,18 +395,118 @@
     background-color: rgba(0, 0, 0, 0.3);
     box-shadow: inset 0 0 5px #00000049;
     height: auto;
-    width: 30%;
+    width: 90%;
     font-size: 0.8vw;
     z-index: 2;
+}
+
+.aecontainer a {
+    display: inline-block !important;
+    width: auto;
+    margin: auto;
+    text-decoration: none;
+    color: wheat;
+}
+
+.imagecontainer2 {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+}
+
+.aeimage {
+    display: flex;
+    margin: 20px;
+    width: 100%;
+    border: 1px black solid;
+    box-shadow: 1px 6px 5px 0px rgba(0, 0, 0, 0.45);
+}
+
+/* INDESIGN */
+
+.indesign {
+    display: flex;
+    top: 20%;
+    flex-direction: column;
+    position: absolute;
+    opacity: 0;
+    transform: translateX(300%);
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    height: 50%;
+    z-index: 3;
+}
+
+.indesign p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.indesignimage {
+    display: flex;
+    margin: auto;
+    width: 90%;
+}
+
+.illustratorcontainer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 5px #00000049;
+    height: auto;
+    width: 50%;
+    line-height: 25px;
+    font-size: 0.8vw;
 }
 
 
 /* XD */
 
+.xd {
+    display: flex;
+    top: 20%;
+    flex-direction: column;
+    position: absolute;
+    opacity: 0;
+    transform: translateX(300%);
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    height: 50%;
+    z-index: 2;
+}
+
+.xd p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.xdcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 5px #00000049;
+    height: auto;
+    width: 40%;
+    line-height: 25px;
+    font-size: 0.8vw;
+}
+
+.xdcontainer a {
+    display: inline-block !important;
+    width: auto;
+    margin: auto;
+    text-decoration: none;
+    color: wheat;
+}
+
 .xdimage {
     display: flex;
-    margin: auto;
-    width: 20%;
+    margin: 30px;
+    width: 50%;
     border: 1px black solid;
     box-shadow: 1px 6px 5px 0px rgba(0, 0, 0, 0.45);
 }
