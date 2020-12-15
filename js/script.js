@@ -119,3 +119,7 @@ function sidebarNavigation() {
       element.classList.add("selected");
   }
 }
+
+//VOIR ANCHORS
+//VOIR FAVICON
+//VOIR MANIFEST.JSON

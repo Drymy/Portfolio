@@ -110,11 +110,12 @@
     }
     
     .xdcontainer {
-        width: 30%;
+        width: 80%;
     }
 
     .xdimage {
-        width: 100%;
+        width: 70%;
+        margin-left: 180px;
     }
 }
 
@@ -146,7 +147,7 @@
     }
 
     #menu a {
-        padding-top: 23px;
+        padding-top: 35px;
         font-size: 4em;
     }
 
@@ -473,7 +474,7 @@
 
     .illustratorcontainer {
         width: 100%;
-        font-size: 0.6em;
+        font-size: 0.7em;
     }
 
     .illustratorimage {
@@ -585,16 +586,14 @@
 
     .xdcontainer {
         width: 100%;
-        font-size: 0.6em;
-        line-height: 13px;
+        font-size: 0.8em;
+        line-height: 18px;
     }
 
     .xdimage {
         display: flex;
-        width: 300px !important;
-        height: 130px !important;
-        object-fit: cover;
-        object-position: 0 0px;
+        width: 100%;
+        margin-left: 10px;
     }
 
 
