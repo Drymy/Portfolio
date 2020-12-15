@@ -1,4 +1,123 @@
+/* Ecrans 1600x900 ----------- */
+
+@media screen and (max-width : 1600px) {
+
+    /* HOME */
+
+    .profil, .parcours, .contact {
+        margin: auto;
+        margin-top: -50px;
+    }
+
+    .homecontainer {
+        width: 60%;
+        height: auto;
+    }
+
+    .homecontent {
+        width: 70%;
+        height: 100%;
+        margin: auto;
+        font-size: 0.7em;
+    }
+
+    .container {
+        display: flex;
+        width: 600px;
+    }
+
+    /* WEB */    
+
+    .outilscontainer {
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        font-size: 0.7em;
+        text-align: center;
+    }
+
+    .projetscontainer {
+        width: 80%;
+        height: auto;
+        font-size: 0.7em;
+        text-align: center;
+    }
+
+    .webcontent {
+        width: 80%;
+        margin: auto;
+    }
+
+    .troupe {
+        padding: unset;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    /* DESIGN */
+
+    .photoshop {
+        width: 95%;
+        height: 80%;
+        margin-top: 40px;
+    }
+
+    .carousel {
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: 2px solid white;
+        width: 65%;
+    }
+    
+    .carousel-control-prev span {
+        top: unset;
+        margin-left: -30px;
+    }
+    
+    .carousel-control-prev-icon {
+        width: 35px !important;
+        height: 35px !important;
+    }
+      
+    .carousel-control-next span {
+        top: unset;
+        margin-left: -15px;
+    }
+    
+    .carousel-control-next-icon {
+        width: 35px !important;
+        height: 35px !important;
+    }
+
+    .illustrator {
+        margin-top: -60px;
+    }
+
+    .indesignimage {
+        display: flex;
+        margin: auto;
+        width: 90%;
+        padding: 30px;
+    }
+
+    .indesigncontainer {
+        width: 80%;
+    }
+    
+    .xdcontainer {
+        width: 70%;
+    }
+
+    .xdimage {
+        width: 30%;
+    }
+}
+
+
 /* Smartphones (portrait) ----------- */
+
 @media screen and (max-width : 480px) {
 
     body {
@@ -132,7 +251,7 @@
 
     .homecontainer {
         width: 100%;
-        height: auto;
+        height: 100%;
     }
 
     .container {
@@ -384,120 +503,4 @@
     }
 
 
-}
-
-
-@media screen and (max-width : 1600px) {
-
-    /* HOME */
-
-    .profil, .parcours, .contact {
-        margin: auto;
-        margin-top: -50px;
-    }
-
-    .homecontainer {
-        width: 60%;
-        height: auto;
-    }
-
-    .homecontent {
-        width: 70%;
-        height: 100%;
-        margin: auto;
-        font-size: 0.7em;
-    }
-
-    .container {
-        display: flex;
-        width: 600px;
-    }
-
-    /* WEB */    
-
-    .outilscontainer {
-        width: 80%;
-        align-items: center;
-        justify-content: center;
-        height: auto;
-        font-size: 0.7em;
-        text-align: center;
-    }
-
-    .projetscontainer {
-        width: 80%;
-        height: auto;
-        font-size: 0.7em;
-        text-align: center;
-    }
-
-    .webcontent {
-        width: 80%;
-        margin: auto;
-    }
-
-    .troupe {
-        padding: unset;
-        padding-top: 20px;
-        padding-bottom: 10px;
-    }
-
-    /* DESIGN */
-
-    .photoshop {
-        width: 95%;
-        height: 80%;
-        margin-top: 40px;
-    }
-
-    .carousel {
-        margin: auto;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        border: 2px solid white;
-        width: 65%;
-    }
-    
-    .carousel-control-prev span {
-        top: unset;
-        margin-left: -30px;
-    }
-    
-    .carousel-control-prev-icon {
-        width: 35px !important;
-        height: 35px !important;
-    }
-      
-    .carousel-control-next span {
-        top: unset;
-        margin-left: -15px;
-    }
-    
-    .carousel-control-next-icon {
-        width: 35px !important;
-        height: 35px !important;
-    }
-
-    .illustrator {
-        margin-top: -60px;
-    }
-
-    .indesignimage {
-        display: flex;
-        margin: auto;
-        width: 90%;
-        padding: 30px;
-    }
-
-    .indesigncontainer {
-        width: 80%;
-    }
-    
-    .xdcontainer {
-        width: 70%;
-    }
-
-    .xdimage {
-        width: 30%;
-    }
 }
