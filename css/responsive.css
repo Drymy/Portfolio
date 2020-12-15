@@ -26,6 +26,10 @@
         width: 600px;
     }
 
+    #bigadrar {
+        top: 164px;
+    }
+
     /* WEB */    
 
     .outilscontainer {
@@ -50,8 +54,7 @@
     }
 
     .troupe {
-        padding: unset;
-        padding-top: 20px;
+        width: 98%;
         padding-bottom: 10px;
     }
 
@@ -103,15 +106,15 @@
     }
 
     .indesigncontainer {
-        width: 80%;
+        width: 25%;
     }
     
     .xdcontainer {
-        width: 70%;
+        width: 30%;
     }
 
     .xdimage {
-        width: 30%;
+        width: 100%;
     }
 }
 
@@ -273,13 +276,21 @@
     }
 
     #bigadrar {
-        display: none;
+        display: flex;
+        margin-top: -150px;
+        margin-left: -40px;
+        top: unset;
+        left: unset;
+    }
+
+    .profil a {
+        margin-top: -20px;
     }
 
     .contact li, .contact ul {
         text-decoration: none;
         color: white;
-        font-size: 1.2em;
+        font-size: 1.3em;
         margin: 0;
         margin-left: 20px;
         padding: 0;
@@ -357,6 +368,11 @@
         overflow: hidden;
     }
 
+    .projets.selected p {
+        text-align: center;
+    }
+    
+
 
 /* DESIGN */
 
@@ -376,25 +392,36 @@
     }
 
     .photoshop {
-        width: 95%;
-        height: 80%;
-        margin-top: 10%;
+        width: 100%;
+        height: 90%;
+        margin-top: 50px !important;
     }
 
-    .photoshopimage {
-        display: flex;
-        margin: auto;
+    .photoshopcontainer {
         width: 100%;
-        border: 1px black solid;
-        box-shadow: 1px 6px 5px 0px rgba(0, 0, 0, 0.45);
+        font-size: 0.7em;
     }
-    
-    .photoshopimage2 {
-        display: flex;
-        margin: auto;
-        width: 100%;
-        border: 1px black solid;
-        box-shadow: 1px 6px 5px 0px rgba(0, 0, 0, 0.45);
+
+    .carousel {
+        margin-top: 5px;
+        margin-bottom: 100px;
+        width: 100% !important;
+    }
+
+    .carousel-control-prev span {
+        top: unset;
+        margin-left: -60px;
+    }
+
+    .carousel-control-next span {
+        top: unset;
+        margin-left: -45px;
+    }
+
+    .container-fluid {
+        padding-top: 10px;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
     }
 
     .designcontainer {
@@ -439,9 +466,14 @@
     }
 
     .illustrator {
-        width: 95%;
+        width: 100%;
         height: 80%;
-        margin-top: 10%;
+        margin-top: -50px;
+    }
+
+    .illustratorcontainer {
+        width: 100%;
+        font-size: 0.6em;
     }
 
     .illustratorimage {
@@ -449,8 +481,6 @@
         margin: auto;
         width: 55%;
         height: auto;
-        border: 1px black solid;
-        box-shadow: 1px 6px 5px 0px rgba(0, 0, 0, 0.45);
         z-index: 1;
     }
     
@@ -458,8 +488,6 @@
         display: flex;
         margin: auto;
         width: 40%;
-        border: 1px black solid;
-        box-shadow: 1px 6px 5px 0px rgba(0, 0, 0, 0.45);
         z-index: 2;
     }
 
@@ -476,6 +504,29 @@
         overflow: hidden;        
     }
 
+    .ae {
+        width: 100%;
+        height: 80%;
+        margin-top: -50px;
+    }
+
+    .aecontainer {
+        width: 100%;
+        font-size: 0.7em;
+    }
+
+    .imagecontainer2 {
+        width: 100%;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aeimage {
+        width: 25%;
+    }
+
+
     #indesign {
         background-color: black;
         -webkit-mask-image: url("../images/svg/id.svg");
@@ -489,6 +540,28 @@
         overflow: hidden;        
     }
 
+    .indesign {
+        width: 100%;
+        padding: unset;
+    }
+
+    .idimagecontainer {
+        flex-direction: column !important;
+    }
+
+    .indesignimage {
+        display: flex;
+        margin: auto;
+        width: 95%;
+        padding: unset;
+    }
+    
+    .indesigncontainer {
+        width: 100%;
+        margin-top: 20px;
+        font-size: 0.7em;
+    }
+
     #xd {
         background-color: black;
         -webkit-mask-image: url("../images/svg/xd.svg");
@@ -500,6 +573,28 @@
         white-space: nowrap;
         font-size: 0 !important;
         overflow: hidden;        
+    }
+
+    .xd {
+        width: 100%;
+    }
+
+    .xdimagecontainer {
+        flex-direction: column !important;
+    }
+
+    .xdcontainer {
+        width: 100%;
+        font-size: 0.6em;
+        line-height: 13px;
+    }
+
+    .xdimage {
+        display: flex;
+        width: 300px !important;
+        height: 130px !important;
+        object-fit: cover;
+        object-position: 0 0px;
     }
 
 

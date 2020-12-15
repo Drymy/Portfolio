@@ -35,7 +35,7 @@
         }
         timeOutId = setTimeout(function() {   //setTimeout delay l'injection du contenu pour permettre à l'animation de se faire, vital
         contentDiv.innerHTML = content;
-        }, 600);
+        }, 400);
         setTimeout(function() { 
           sidebarNavigation()}, 1000);
       });
@@ -58,8 +58,8 @@
 $(document).ready(function(){
   
   $("#home, #web, #design").click(function(){
-    $("#main").finish().fadeOut("slow");
-    $("#main").fadeIn("slow");
+    $("#main").finish().fadeOut(400);
+    $("#main").fadeIn(400);
   });
 });
 
