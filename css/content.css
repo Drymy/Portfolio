@@ -109,6 +109,7 @@
     justify-content: center;
     width: 100%;
     height: 100%;
+    margin-top: -20px;
 }
 
 .outils.selected, .projets.selected {
@@ -137,7 +138,7 @@
     background-color: rgba(0, 0, 0, 0.3);
     box-shadow: inset 0 0 5px #00000049;
     height: auto;
-    width: 60%;
+    width: 80%;
     font-size: 0.8vw;
     z-index: 2;
 }
@@ -161,6 +162,7 @@
     display: flex;
     flex-direction: column;
     width: 70%;
+    text-align: center;
 }
 
 .webcontent i {
@@ -262,7 +264,7 @@
     margin-top: 20px;
     margin-bottom: 20px;
     border: 2px solid white;
-    width: 90%;
+    width: 66%;
 }
 
 .carousel-control-prev span {
@@ -357,7 +359,7 @@
 .illustratorimage {
     display: flex;
     margin: auto;
-    width: 50%;
+    width: 60%;
     height: auto;
 }
 
@@ -448,6 +450,7 @@
     display: flex;
     margin: auto;
     width: 90%;
+    padding: 20px;
 }
 
 .indesigncontainer {
@@ -458,7 +461,7 @@
     background-color: rgba(0, 0, 0, 0.3);
     box-shadow: inset 0 0 5px #00000049;
     height: auto;
-    width: 50%;
+    width: 30%;
     line-height: 25px;
     font-size: 0.8vw;
 }
@@ -509,7 +512,7 @@
 .xdimage {
     display: flex;
     margin: 30px;
-    width: 50%;
+    width: 40%;
     border: 1px black solid;
     box-shadow: 1px 6px 5px 0px rgba(0, 0, 0, 0.45);
 }

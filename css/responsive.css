@@ -416,7 +416,6 @@
     /* WEB */    
 
     .outilscontainer {
-        margin-bottom: 10%;
         width: 80%;
         align-items: center;
         justify-content: center;
@@ -429,7 +428,6 @@
         width: 80%;
         height: auto;
         font-size: 0.7em;
-        margin-top: -50px;
         text-align: center;
     }
 
